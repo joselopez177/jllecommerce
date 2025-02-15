@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 
-import dj_database_url
+#import dj_database_url
 import os
 
 from pathlib import Path
@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")git 
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # es la interna: postgresql://jllbaseposgre_ld7e_user:J8VAzjzsZYRdYeBR7b0mvIvYZwUjZcgI@dpg-cuhtqel2ng1s73dulvhg-a/jllbaseposgre_ld7e
