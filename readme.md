@@ -9,3 +9,5 @@ Installation:
 3. Run server: `python manage.py runserver`
 
 <img src="./static/images/demo.png"/>
+# jllecomm2
+# jllecomm2
