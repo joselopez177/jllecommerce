@@ -5,7 +5,6 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
@@ -73,7 +72,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -84,6 +83,18 @@ DATABASES = {
         'PORT': os.environ.get('DB_PORT'),
     }
 }
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'jllbaseposgre_ld7e',
+        'USER': 'jllbaseposgre_ld7e_user',
+        'PASSWORD': 'J8VAzjzsZYRdYeBR7b0mvIvYZwUjZcgI',
+        'HOST': 'dpg-cuhtqel2ng1s73dulvhg-a',
+        'PORT': '5432',  # El valor por defecto es '5432'
+    }
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -126,7 +137,7 @@ if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFileStorage'
-   #STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
+ 
     
 #STATICFILES_DIRS = [
  #   os.path.join(BASE_DIR, 'static')
