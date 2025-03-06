@@ -1,5 +1,5 @@
 import os
-import dj_database_url
+#import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -33,7 +33,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
     'store.apps.StoreConfig',
 ]
 
@@ -91,7 +90,7 @@ DATABASES = {
         'USER': 'jllbaseposgre_ld7e_user',
         'PASSWORD': 'J8VAzjzsZYRdYeBR7b0mvIvYZwUjZcgI',
         'HOST': 'dpg-cuhtqel2ng1s73dulvhg-a',
-        'PORT': '5432',  # El valor por defecto es '5432'
+        'PORT': '5432', 
     }
 }
 
